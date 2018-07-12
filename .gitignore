@@ -1,0 +1,8 @@
+# Object files
+Except.txt
+# from MacOSX
+.DS_Store
+# Emacs backup files
+*~
+# Vim
+.*.swp
