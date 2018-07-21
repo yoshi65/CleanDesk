@@ -2,7 +2,7 @@
 #
 # FileName: 	CleanDesk
 # CreatedDate:  2018-07-12 15:05:43 +0900
-# LastModified: 2018-07-19 12:08:04 +0900
+# LastModified: 2018-07-19 17:28:28 +0900
 #
 
 # variable
@@ -32,8 +32,8 @@ mkdir -p $HOME/.Trash
 
 # get list of except files
 ExceptList=(  )
-if [[ -f `pwd`/Except.txt ]]; then
-    ExceptList=( ${(@f)"$(<`pwd`/Except.txt)"} )
+if [[ -f $(cd $(dirname $0) && pwd)/Except.txt ]]; then
+    ExceptList=( ${(@f)"$(<$(cd $(dirname $0) && pwd)/Except.txt)"} )
 fi
 
 # get list of files generated more than a month ago
