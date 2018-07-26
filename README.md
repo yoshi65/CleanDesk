@@ -17,6 +17,16 @@ p(period) option's arguments format is [1-9]+[0-9]*[dm].
 ## example
 ```
 % ./CleanDesk.sh
-or
-% ./RemSch.sh -num 2
+```
+
+If you want to set unused period to a month.
+```
+% ./CleanDesk.sh -p 1m
+```
+
+There is `crontab` as one of the means to be executed periodically.
+```
+% crontab -e
+
+0 12 * * * $(pwd)/CleanDesk.sh
 ```
