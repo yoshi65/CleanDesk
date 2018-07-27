@@ -2,13 +2,13 @@
 #
 # FileName: 	CleanDesk
 # CreatedDate:  2018-07-12 15:05:43 +0900
-# LastModified: 2018-07-19 17:28:28 +0900
+# LastModified: 2018-07-27 10:09:05 +0900
 #
 
 # variable
 local -A opthash
 period="7d"
-error_message="usage: ./CleanDesk.sh [-p]\n\nMove unused files to trash\n\noptional arguments:\n  -p\tChoice period(default: 7 days)\n"
+error_message="usage: ./CleanDesk.sh [-p]\n\nKeep your desktop clean by moving unused files to trash\n\noptional arguments:\n  -p\tChoice unused period(default: 7 days)\n"
 
 # option
 zparseopts -D -A opthash -- p:
